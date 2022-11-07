@@ -4,15 +4,19 @@ import { add, multiply } from '../../utilities/calculate';
 
 
 const Cosmetics = () => {
-    const first = 55;
-  const second = 45;
-  const total = add(first, second);
-  const gun = multiply(first, second);
+    const cosmetics = [
+        {id: 1, name: 'Alta', price: 100},
+        {id: 2, name: 'Palish', price: 200},
+        {id: 3, name: 'Eyebrow', price: 300},
+        {id: 4, name: 'Eyeliner', price: 400},
+        {id: 5, name: 'Belt', price: 500}
+    ]
     return (
         <div>
             <h1>Welcome to my cosmetics store</h1>
-            <p>{total}</p>
-            <p>{gun}</p>
+            {
+                cosmetics.map(cosmetic => console.log(cosmetic))
+            }
         </div>
     );
 };
