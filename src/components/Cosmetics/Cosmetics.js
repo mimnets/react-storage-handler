@@ -1,5 +1,6 @@
 import React from 'react';
 import { add, multiply } from '../../utilities/calculate';
+import Cosmetic from '../Cosmetic/Cosmetic';
 // import add from '../../utilities/calculate';
 
 
@@ -15,7 +16,10 @@ const Cosmetics = () => {
         <div>
             <h1>Welcome to my cosmetics store</h1>
             {
-                cosmetics.map(cosmetic => console.log(cosmetic))
+                cosmetics.map(cosmetic => <Cosmetic 
+                    key={cosmetic.id} 
+                    cosmetic={cosmetic} 
+                    ></Cosmetic>)
             }
         </div>
     );
