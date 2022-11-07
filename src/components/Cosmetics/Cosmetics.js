@@ -6,7 +6,6 @@ import Cosmetic from '../Cosmetic/Cosmetic';
 
 const Cosmetics = () => {
     const [cosmetics, setCosmetics] = useState([]);
-
     useEffect(()=>{
         fetch('data.json')
         .then(res => res.json())
@@ -15,7 +14,7 @@ const Cosmetics = () => {
 
     return (
         <div>
-            <h1>Welcome to my cosmetics store</h1>
+            <h1>Welcome to my cosmetics store - learn mock api</h1>
             {
                 cosmetics.map(cosmetic => <Cosmetic 
                     key={cosmetic.id} 
