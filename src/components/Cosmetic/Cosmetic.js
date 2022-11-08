@@ -6,7 +6,7 @@ const Cosmetic = (props) => {
 
     const addToCart = (id) =>{
         dataDb(id)
-        console.log(id);
+        // console.log(id);
     }
     // If you need to send more than one data then use this
     const wraperFuncWithParam = () => addToCart(id)
