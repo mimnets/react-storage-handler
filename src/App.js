@@ -5,8 +5,8 @@ import Recaps from './components/Monirul/Recaps/Recaps';
 function App() {
     return (
     <div className="App">
-      <Recaps></Recaps>
-      {/* <Cosmetics></Cosmetics> */}
+      {/* <Recaps></Recaps> */}
+      <Cosmetics></Cosmetics>
     </div>
   );
 }
