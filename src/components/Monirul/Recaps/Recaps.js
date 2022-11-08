@@ -7,12 +7,16 @@ const Recaps = () => {
     useEffect(()=>{
         fetch('mobileFakeData.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setMobiles(data))
     },[])
     return (
         <div>
             <h1>Monirul Recap</h1>
-            <Recap></Recap>
+            <h2>List of Mobiles</h2>
+            {
+                mobiles.map(mobile => <Recap mobile={mobile}></Recap>)
+            }
+            {/* <Recap></Recap> */}
         </div>
     );
 };

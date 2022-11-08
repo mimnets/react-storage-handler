@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Recap = () => {
+const Recap = (props) => {
+    const {name,price} = props.mobile;
+
     return (
         <div>
-            <h1>List of Mobiles</h1>
+            <p>{name}</p>
+            <p>${price}</p>
+            <button>Add to Cart</button>
         </div>
     );
 };

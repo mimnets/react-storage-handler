@@ -1,26 +1,26 @@
 [
     {
-        "id": 1,
+        "id": "0101",
         "name": "iPhone",
         "price":"1000"
     },
     {
-        "id": 2,
+        "id": "0102",
         "name": "Samsung",
         "price":"11000"
     },
     {
-        "id": 3,
+        "id": "0103",
         "name": "Nokia",
         "price":"13000"
     },
     {
-        "id": 4,
+        "id": "0104",
         "name": "Pixel",
         "price":"14000"
     },
     {
-        "id": 5,
+        "id": "0105",
         "name": "OnePlus",
         "price":"15000"
     }
